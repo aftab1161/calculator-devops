@@ -23,6 +23,8 @@ public class calculator {
 
     @GetMapping("/divide")
     public int divide(@RequestParam("a") int a,@RequestParam("b") int b){
+        if(b==0)
+            return 0;
         return a/b;
     }
 }
