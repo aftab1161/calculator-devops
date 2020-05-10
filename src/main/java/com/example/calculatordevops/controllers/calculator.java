@@ -10,4 +10,19 @@ public class calculator {
     public int add(@RequestParam("a") int a,@RequestParam("b") int b){
         return a+b;
     }
+
+    @GetMapping("/sub")
+    public int substract(@RequestParam("a") int a,@RequestParam("b") int b){
+        return a-b;
+    }
+
+    @GetMapping("/multiply")
+    public int multiply(@RequestParam("a") int a,@RequestParam("b") int b){
+        return a*b;
+    }
+
+    @GetMapping("/divide")
+    public int divide(@RequestParam("a") int a,@RequestParam("b") int b){
+        return a/b;
+    }
 }
